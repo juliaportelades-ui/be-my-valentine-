@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Be My Valentine 💘</title>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffe6eb;
+  font-family: Arial, sans-serif;
+}
+h1 { margin-bottom: 40px; }
+button {
+  font-size: 20px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  position: absolute;
+}
+#yes {
+  background: #ff4d6d;
+  color: white;
+  left: 40%;
+}
+#no {
+  background: #ccc;
+  left: 55%;
+}
+</style>
+</head>
+
+<body>
+<h1>Will you be my Valentine? 💖</h1>
+
+<button id="yes" onclick="alert('YAY 💕 You’re stuck with me now 😘')">Yes</button>
+<button id="no">No</button>
+
+<script>
+const noBtn = document.getElementById("no");
+noBtn.addEventListener("mouseover", () => {
+  noBtn.style.left = Math.random() * 80 + "%";
+  noBtn.style.top = Math.random() * 80 + "%";
+});
+</script>
+
+</body>
+</html>
